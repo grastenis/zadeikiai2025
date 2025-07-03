@@ -1,81 +1,268 @@
 <html>
-    <head>
-        <style>
-            div.groups {
-                width: 1000px;
-            }
-            div.groups table {
-                width: 100%;
-                
-            }
-            div.groups table th,td {
-                text-align: center;
-                color: #111;
-                text-shadow: 1px 1px #ddd;
-                background: #ddd;
-                border-top-left-radius: 4px;
-                border-top-right-radius: 4px;
-                padding: 10px;
-            }
-            div.groups table th{
-                background: #ccc;
-            }
-            div.groups th:nth-of-type(1) {
-                width: 40%
-            }
-            
-            div.groups th:nth-of-type(8) {
-                width: 5%
-            }
-            div.groups th:nth-of-type(9) {
-                width: 5%
-            }
-            div.groups th:nth-of-type(10) {
-                width: 5%;
-            }
-            div.groups td:nth-of-type(10) {
-                font-weight: 600;
-            }
-            .win {
-                font-weight: bold;
-            }
-            .self {
-                background: #ccc;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Pagrindinė lentelė</h1>
-        <div></div>
-        <h1>Pagrindinė lentelė, dėl 3 vietos</h1>
-        <div></div>
-        <h1>Paguodos lentelė, dėl 9 vietos</h1>
-        <div></div>
 
-        <h1>Grupių lentelė</h1>
-       
-        <div class="groups">
-            <table>
-                <tr><th>Grupė A</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th><th>Vieta</th></tr>
-                <tr><td>VADIMAS PIPYNĖ</td><td class="self">X</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td></td><td><td></td><td></td></td></tr>
-                <tr><td>VYTAUTAS ŠPOKAUSKAS</td><td>&nbsp;&nbsp;</td><td class="self">X</td><td>&nbsp;</td><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>MANTAS BARTUŠKEVIČIUS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td class="self">X</td><td>&nbsp;&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>RENIUS JURĖNAS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td class="self">X</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>KĘSTUTIS DOVYDĖNAS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td class="self">X</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>TOMAS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td></td><td class="self">X</td><td></td><td></td><td></td></tr>
-            </table>
-            <p></p>
-            <table>
-                <tr><th>Grupė B</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th><th>Vieta</th></tr>
-                <tr><td>RAIMONDAS ČEPOKAS</td><td class="self">X</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>DOVYDAS VALANTONIS</td><td>&nbsp;&nbsp;</td><td class="self">X</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>ŽILVINAS TALOČKA</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td class="self">X</td><td>&nbsp;&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>ROLANDAS AUKŠTIKALNIS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td class="self">X</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>GEDIMINAS RASTENIS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td class="self">X</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>NERIJUS</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td></td><td></td><td class="self">X</td><td></td><td></td><td></td></tr>
-            </table>            
-            <p></p>
+<head>
+    <style>
+        div.groups {
+            width: 1000px;
+        }
 
-        </div>
-    </body>
+        div.groups table {
+            width: 100%;
+
+        }
+
+        div.groups table th,
+        td {
+            text-align: center;
+            color: #111;
+            text-shadow: 1px 1px #ddd;
+            background: #ddd;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            padding: 10px;
+        }
+
+        div.groups table th {
+            background: #ccc;
+        }
+
+        div.groups th:nth-of-type(1) {
+            width: 40%
+        }
+
+        div.groups th:nth-of-type(8) {
+            width: 5%
+        }
+
+        div.groups th:nth-of-type(9) {
+            width: 5%
+        }
+
+        div.groups th:nth-of-type(10) {
+            width: 5%;
+        }
+
+        div.groups td:nth-of-type(10) {
+            font-weight: 600;
+        }
+
+        .win {
+            font-weight: bold;
+        }
+
+        .self {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pagrindinė lentelė</h1>
+    <div></div>
+    <h1>Pagrindinė lentelė, dėl 3 vietos</h1>
+    <div></div>
+    <h1>Paguodos lentelė, dėl 9 vietos</h1>
+    <div></div>
+
+    <h1>Grupių lentelė</h1>
+
+    <div class="groups">
+        <table>
+            <tr>
+                <th>Grupė A</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>W</th>
+                <th>L</th>
+                <th>Vieta</th>
+            </tr>
+            <tr>
+                <td>VADIMAS PIPYNĖ</td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>VYTAUTAS ŠPOKAUSKAS</td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>MANTAS BARTUŠKEVIČIUS</td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>RENIUS JURĖNAS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>KĘSTUTIS DOVYDĖNAS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TOMAS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ARNAS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p></p>
+        <table>
+            <tr>
+                <th>Grupė B</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>W</th>
+                <th>L</th>
+                <th>Vieta</th>
+            </tr>
+            <tr>
+                <td>RAIMONDAS ČEPOKAS</td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>DOVYDAS VALANTONIS</td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ŽILVINAS TALOČKA</td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ROLANDAS AUKŠTIKALNIS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>GEDIMINAS RASTENIS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>NERIJUS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="self">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p></p>
+
+    </div>
+</body>
+
 </html>
