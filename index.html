@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta name="htmx-config" content='{"selfRequestsOnly": false}' />
   <script src="https://unpkg.com/htmx.org@2.0.0"
     integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw"
     crossorigin="anonymous"></script>
@@ -289,11 +290,11 @@
 <body>
   <h1>Pagrindinė lentelė</h1>
   <div class="wrapper">
-  <div id="rounds" hx-get="/round8" hx-swap="innerHTML" hx-trigger="load"></div>
+  <div id="rounds" hx-get="https://zadeikiai2025.gedras.duckdns.org/round8" hx-swap="innerHTML" hx-trigger="load"></div>
   </div>
   <p></p>
   <h1>Grupių lentelės</h1>
-  <div id="groups" hx-get="/groups2" hx-swap="innerHTML" hx-trigger="load"></div>
+  <div id="groups" hx-get="https://zadeikiai2025.gedras.duckdns.org/groups2" hx-swap="innerHTML" hx-trigger="load"></div>
 </body>
 
 </html>
